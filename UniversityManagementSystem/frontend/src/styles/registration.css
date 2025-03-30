@@ -1,0 +1,321 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Background Settings */
+body {
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* General Styles */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: rgb(244, 128, 70);
+}
+
+/* Header & Navbar */
+header {
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+}
+
+
+.navbar .logo a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #070000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Button Styles */
+.action_btn {
+    background-color: rgb(176, 197, 255);
+    color: #060606;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: #f9f7f7;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Open Dropdown */
+.dropdown_menu.open {
+    display: block;
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero Section */
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #030303;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    
+    .navbar .toggle_btn {
+        display: block;
+    }
+    
+    .dropdown_menu {
+        display: block;
+        height: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: auto;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+.container h2 {
+    color: navy;
+}
+
+/* Form Fields */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: navy;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Footer Container */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .footer-column h3 {
+    color: orange;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: orange;
+  }
+  
+  /* Contact Info */
+  .footer-column p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .footer-column i {
+    color: orange;
+    margin-right: 8px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 8px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: orange;
+  }
+  
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 20px;
+    background: #222;
+    padding: 10px 0;
+  }
+  
+  

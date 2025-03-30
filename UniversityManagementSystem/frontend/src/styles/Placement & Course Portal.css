@@ -1,0 +1,281 @@
+/* General Styles */
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Background Settings */
+body {
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* General Styles */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: rgb(244, 128, 70);
+}
+
+/* Header & Navbar */
+header {
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+}
+
+
+.navbar .logo a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #070000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Button Styles */
+.action_btn {
+    background-color: rgb(176, 197, 255);
+    color: #060606;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: #f9f7f7;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Open Dropdown */
+.dropdown_menu.open {
+    display: block;
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero Section */
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #030303;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    
+    .navbar .toggle_btn {
+        display: block;
+    }
+    
+    .dropdown_menu {
+        display: block;
+        height: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: auto;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header & Navigation */
+.container {
+    background: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #003366, #ff6600);
+    color: white;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: white;
+    color: #003366;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Section Styles */
+.section {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    display: inline-block;
+    width: 300px;
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #ff6600;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ff6600;
+}
+
+/* Contact Section */
+#contact {
+    background: #003366;
+    color: white;
+    padding: 20px;
+}
+
+#contact p {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

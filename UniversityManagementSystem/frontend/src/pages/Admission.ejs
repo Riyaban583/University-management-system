@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - University Portal</title>
+    <link rel="stylesheet" href="/UniversityManagementSystem/frontend/src/styles/Admission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="/UniversityManagementSystem/frontend/public/images/WhatsApp_Image_2025-03-28_at_00.11.52_2b153dc5-removebg-preview.png" width="60px" alt="University Logo"></a>
+            </div>
+            <ul class="links">
+                <li><a href="./home.ejs">Home</a></li>
+                <li><a href="./aboutus.ejs">About</a></li>
+                <li><a href="./coursedetail.ejs">Courses</a></li>
+                <li><a href="./Admission.ejs">Admissions</a></li>
+                <li><a href="./Faculty.ejs">Faculty</a></li>
+                <li><a href="./Contact Us.ejs">Contact</a></li>
+            </ul>
+            <!-- Login Button (Only in Main Navbar) -->
+            <a href="#" class="action_btn">Login</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu (Without Login Button) -->
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="./home.ejs">Home</a></li>
+                <li><a href="./aboutus.ejs">About</a></li>
+                <li><a href="./coursedetail.ejs">Courses</a></li>
+                <li><a href="./Admission.ejs">Admissions</a></li>
+                <li><a href="./Faculty.ejs">Faculty</a></li>
+                <li><a href="./Contact Us.ejs">Contact</a></li>
+                <li><a href="./Login.ejs" class="action_btn">Login</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </header>    
+    
+    <section class="admission-portal">
+        <h2>Welcome to the Admission Portal</h2>
+        
+        <!-- Search Bar for Course Info -->
+        <div class="search-box">
+            <input type="text" id="searchCourses" placeholder="Search for courses...">
+            <button id="searchBtn">Search</button>
+        </div>
+    
+        <div class="admission-container">
+            <div class="admission-card">
+                <h3>Apply for Admission</h3>
+                <p>Start your journey at our university by filling out the online application form.</p>
+                <a href="apply.html" class="btn">Apply Now</a>
+            </div>
+    
+            <div class="admission-card">
+                <h3>Check Application Status</h3>
+                <p>Already applied? Track your admission application status here.</p>
+                <a href="status.html" class="btn">Check Status</a>
+            </div>
+    
+            <div class="admission-card">
+                <h3>Scholarships & Financial Aid</h3>
+                <p>Explore available scholarships and financial assistance programs.</p>
+                <a href="scholarships.html" class="btn">View Scholarships</a>
+            </div>
+    
+            <div class="admission-card">
+                <h3>Download Brochure</h3>
+                <p>Get the latest university brochure and course guide.</p>
+                <a href="brochure.pdf" class="btn" download>Download</a>
+            </div>
+    
+            <div class="admission-card">
+                <h3>Chat with Admission Assistant</h3>
+                <p>Have questions? Chat with our AI assistant for quick responses.</p>
+                <a href="chatbot.html" class="btn">Chat Now</a>
+            </div>
+        </div>
+    
+        <section class="why-eduflow">
+            <h2>Why Choose EDUFLOW?</h2>
+            
+            <div class="theory-container">
+                <div class="theory-box">
+                    <img src="images/world-class-faculty.jpg" alt="World-Class Faculty">
+                    <h3>World-Class Faculty</h3>
+                    <p>Learn from distinguished mentors and researchers who inspire innovation and critical thinking.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/global-exposure.jpg" alt="Global Exposure">
+                    <h3>Global Exposure</h3>
+                    <p>Collaborate with top universities worldwide and engage in interdisciplinary research.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/entrepreneurship.jpg" alt="Entrepreneurial Ecosystem">
+                    <h3>Entrepreneurial Ecosystem</h3>
+                    <p>Our Innovation & Incubation Hub supports startups and business ventures.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/campus-life.jpg" alt="Modern Campus Life">
+                    <h3>Modern Campus Life</h3>
+                    <p>State-of-the-art hostels, 24/7 libraries, healthcare, cafeterias, and smart transport.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/student-life.jpg" alt="Vibrant Student Life">
+                    <h3>Vibrant Student Life</h3>
+                    <p>Join clubs, cultural events, and participate in national-level festivals.</p>
+                </div>
+            </div>
+        
+            <h2>Why Pursue a PhD at EDUFLOW?</h2>
+        
+            <div class="theory-container">
+                <div class="theory-box">
+                    <img src="images/research.jpg" alt="Cutting-Edge Research">
+                    <h3>Cutting-Edge Research</h3>
+                    <p>Conduct state-of-the-art research in AI, Data Science, Robotics, Healthcare, and more.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/mentorship.jpg" alt="World-Class Mentorship">
+                    <h3>World-Class Mentorship</h3>
+                    <p>Work alongside leading scholars and industry experts.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/scholarships.jpg" alt="Scholarships & Funding">
+                    <h3>Scholarships & Funding</h3>
+                    <p>Access fully funded PhD programs, research grants, and fellowships.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/career-opportunities.jpg" alt="Career Opportunities">
+                    <h3>Career Opportunities</h3>
+                    <p>Join top universities or enter high-impact roles in industries like Google, Tesla, ISRO, and MIT.</p>
+                </div>
+        
+                <div class="theory-box">
+                    <img src="images/professional-development.jpg" alt="Professional Development">
+                    <h3>Professional Development</h3>
+                    <p>Attend workshops, publish research papers, and gain exposure at global conferences.</p>
+                </div>
+            </div>
+        
+            <div class="cta-buttons">
+                <a href="phd-programs.html" class="btn">Explore PhD Programs</a>
+                <a href="apply.html" class="btn">Apply Now</a>
+            </div>
+        </section>
+
+        
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq">
+                <button class="faq-question">What are the eligibility criteria? <span>+</span></button>
+                <div class="faq-answer">Minimum 60% in high school for UG courses.</div>
+    
+                <button class="faq-question">What documents are required? <span>+</span></button>
+                <div class="faq-answer">High school certificates, ID proof, passport-size photos.</div>
+    
+                <button class="faq-question">Is there an entrance exam? <span>+</span></button>
+                <div class="faq-answer">Yes, certain courses require an entrance test.</div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- University Info -->
+            <div class="footer-column">
+                <h3>About University</h3>
+                <p>Our university is committed to excellence in education, research, and innovation. Providing students
+                    with the best academic environment.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Career Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Portals -->
+            <div class="footer-column">
+                <h3>University Portals</h3>
+                <ul>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Faculty Portal</a></li>
+                    <li><a href="#">Alumni Portal</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Hostel & Accommodation</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 University Road, City, Country</p>
+                <p><i class="fa-solid fa-phone"></i> +123-456-7890</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@university.edu</p>
+
+                <!-- Social Media Links -->
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Inquiry Form -->
+        <form class="footer-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 University Management System. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/UniversityManagementSystem/frontend/src/javascript/Admission.js"></script>
+    <script src="/UniversityManagementSystem/frontend/src/javascript/navbar.js"></script>
+    <script src="/UniversityManagementSystem/frontend/src/javascript/footer.js"></script>
+</body>
+</html>

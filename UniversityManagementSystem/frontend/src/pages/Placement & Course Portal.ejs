@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement & Course Portal</title>
+    <link rel="stylesheet" href="/UniversityManagementSystem/frontend/src/styles/Placement & Course Portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   <!-- Navbar -->
+  <header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img
+                    src="/UniversityManagementSystem/frontend/public/images/WhatsApp_Image_2025-03-28_at_00.11.52_2b153dc5-removebg-preview.png"
+                    width="60px" alt="University Logo"></a>
+        </div>
+        <ul class="links">
+            <li><a href="./home.ejs">Home</a></li>
+            <li><a href="./aboutus.ejs">About</a></li>
+            <li><a href="./coursedetail.ejs">Courses</a></li>
+            <li><a href="./Admission.ejs">Admissions</a></li>
+            <li><a href="./Faculty.ejs">Faculty</a></li>
+            <li><a href="./Contact Us.ejs">Contact</a></li>
+        </ul>
+        <!-- Login Button (Only in Main Navbar) -->
+        <a href="./Student portal.ejs" class="action_btn">Login</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu (Without Login Button) -->
+    <div class="dropdown_menu">
+        <ul>
+            <li><a href="./home.ejs">Home</a></li>
+            <li><a href="./aboutus.ejs">About</a></li>
+            <li><a href="./coursedetail.ejs">Courses</a></li>
+            <li><a href="./Admission.ejs">Admissions</a></li>
+            <li><a href="./Faculty.ejs">Faculty</a></li>
+            <li><a href="./Contact Us.ejs">Contact</a></li>
+            <li><a href="./Login.ejs" class="action_btn">Login</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <div class="container">
+        <h1>Placement & Course Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#jobs">Job Postings</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Explore Career Opportunities</h2>
+        <p>Find jobs, internships, and courses to boost your career.</p>
+        <a href="#jobs" class="btn">Get Started</a>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="jobs" class="section">
+        <h2>Job Postings</h2>
+        <div class="card">
+            <h3>Software Engineer</h3>
+            <p>Company: Google</p>
+            <p>Location: Remote</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+        <div class="card">
+            <h3>Data Analyst</h3>
+            <p>Company: Microsoft</p>
+            <p>Location: Bangalore</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Internship Listings -->
+    <section id="internships" class="section">
+        <h2>Internships</h2>
+        <div class="card">
+            <h3>Web Development Intern</h3>
+            <p>Company: Amazon</p>
+            <p>Duration: 3 months</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+        <div class="card">
+            <h3>Cybersecurity Intern</h3>
+            <p>Company: IBM</p>
+            <p>Duration: 6 months</p>
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <h2>Courses</h2>
+        <div class="card">
+            <h3>Full-Stack Development</h3>
+            <p>Learn HTML, CSS, JavaScript, React & Node.js</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+        <div class="card">
+            <h3>Ethical Hacking</h3>
+            <p>Master cybersecurity tools and penetration testing</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: support@placementportal.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Placement & Course Portal. All Rights Reserved.</p>
+    </footer>
+    <script src="/UniversityManagementSystem/frontend/src/javascript/navbar.js"></script>
+</body>
+</html>

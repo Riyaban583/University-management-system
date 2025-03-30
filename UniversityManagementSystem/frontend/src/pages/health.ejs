@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health & Wellness</title>
+  <link rel="stylesheet" href="/university managment system/UniversityManagementSystem/frontend/src/styles/health.css  ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img
+                    src="/UniversityManagementSystem/frontend/public/images/WhatsApp_Image_2025-03-28_at_00.11.52_2b153dc5-removebg-preview.png"
+                    width="60px" alt="University Logo"></a>
+        </div>
+        <ul class="links">
+            <li><a href="./home.ejs">Home</a></li>
+            <li><a href="./aboutus.ejs">About</a></li>
+            <li><a href="./coursedetail.ejs">Courses</a></li>
+            <li><a href="./Admission.ejs">Admissions</a></li>
+            <li><a href="./Faculty.ejs">Faculty</a></li>
+            <li><a href="./Contact Us.ejs">Contact</a></li>
+        </ul>
+        <!-- Login Button (Only in Main Navbar) -->
+        <a href="#" class="action_btn">Login</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu (Without Login Button) -->
+    <div class="dropdown_menu">
+        <ul>
+            <li><a href="./home.ejs">Home</a></li>
+            <li><a href="./aboutus.ejs">About</a></li>
+            <li><a href="./coursedetail.ejs">Courses</a></li>
+            <li><a href="./Admission.ejs">Admissions</a></li>
+            <li><a href="./Faculty.ejs">Faculty</a></li>
+            <li><a href="./Contact Us.ejs">Contact</a></li>
+            <li><a href="./Login.ejs" class="action_btn">Login</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+  <div class="container">
+    <h1>Health & Wellness</h1>
+    <p>Your guide to a healthier, happier you 🌿</p>
+  </div>
+
+  <nav>
+    <a href="./home.ejs">Home</a>
+    <a href="#">Fitness</a>
+    <a href="#">Nutrition</a>
+    <a href="#">Mental Health</a>
+    <a href="#">Appointments</a>
+  </nav>
+
+  <div class="content">
+    <div class="section">
+      <h2>Welcome</h2>
+      <p>At our Health & Wellness center, we support your physical, mental, and emotional well-being. Whether you're a student, staff, or part of the community, we're here to help you thrive.</p>
+    </div>
+
+    <div class="section">
+      <h2>Quick Wellness Tips</h2>
+      <div class="tips">
+        <div class="tip-card">
+          <h3>💧 Stay Hydrated</h3>
+          <p>Drink at least 8 glasses of water a day to keep your body and mind refreshed.</p>
+        </div>
+        <div class="tip-card">
+          <h3>🧘‍♂️ Practice Mindfulness</h3>
+          <p>Take 5 minutes daily to breathe deeply and refocus your thoughts.</p>
+        </div>
+        <div class="tip-card">
+          <h3>🍎 Eat Balanced Meals</h3>
+          <p>Include fruits, vegetables, proteins, and whole grains in your diet.</p>
+        </div>
+        <div class="tip-card">
+          <h3>🏃‍♀️ Get Active</h3>
+          <p>Move your body for at least 30 minutes every day – even a walk helps!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Need Help?</h2>
+      <p>Book an appointment with our on-campus counselors, nutritionists, or health advisors. We’re just one click away from helping you feel your best.</p>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+
+      <!-- University Info -->
+      <div class="footer-column">
+          <h3>About University</h3>
+          <p>Our university is committed to excellence in education, research, and innovation. Providing students
+              with the best academic environment.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Academics</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Career Services</a></li>
+          </ul>
+      </div>
+
+      <!-- Portals -->
+      <div class="footer-column">
+          <h3>University Portals</h3>
+          <ul>
+              <li><a href="./Student portal.ejs">Student Portal</a></li>
+              <li><a href="./Faculty.ejs">Faculty Portal</a></li>
+              <li><a href="#">Alumni Portal</a></li>
+              <li><a href="./health.ejs">Health & Wellness</a></li>
+              <li><a href="./hostel.ejs">Hostel & Accommodation</a></li>
+          </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-location-dot"></i> 123 University Road, City, Country</p>
+          <p><i class="fa-solid fa-phone"></i> +123-456-7890</p>
+          <p><i class="fa-solid fa-envelope"></i> contact@university.edu</p>
+
+          <!-- Social Media Links -->
+          <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+
+  </div>
+  <!-- Inquiry Form -->
+  <form class="footer-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+  </form>
+  </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+      <p>&copy; 2025 University Management System. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="/UniversityManagementSystem/frontend/src/javascript/Admission.js"></script>
+<script src="/UniversityManagementSystem/frontend/src/javascript/navbar.js"></script>
+<script src="/UniversityManagementSystem/frontend/src/javascript/footer.js"></script>
+
+</body>
+</html>

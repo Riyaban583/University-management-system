@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url("YYYO.jpg") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: linear-gradient(to bottom right, #003973, #0079a4);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .login-box h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .login-box p {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .login-box label {
+      font-size: 14px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .captcha-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .captcha-input {
+      flex: 1;
+    }
+
+    .refresh-btn {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+    }
+
+    .checkbox input {
+      margin-right: 10px;
+    }
+
+    .checkbox label {
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #004ad2;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #d1e8ff;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #55ccff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Welcome</h2>
+    <p>To Student Portal</p>
+
+    <label for="mobile">Mobile</label>
+    <input type="text" id="mobile" placeholder="📱 Mobile">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="🔒 Password">
+
+    <!-- <label for="captcha">Captcha</label>
+    <div class="captcha-section">
+      <input type="text" class="captcha-input" value="840011" readonly>
+      <button class="refresh-btn">⟳</button>
+    </div>
+
+    <input type="text" placeholder="Enter Captcha"> -->
+
+    <div class="checkbox">
+        <input type="checkbox" id="instructions" checked>
+        <label for="instructions"><span style="color: #00ffcc;">✓</span> I Have Read the Instructions</label>
+      </div>
+  
+      <button type="submit">Login</button>
+  
+      <div class="footer">
+        Student Portal User Manual<br>
+        New User? <a href="#">Register Now!</a> | <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+  
+  </body>
+  </html>
